@@ -1,4 +1,6 @@
 <h1><%= @product.title %></h1>
-<p>Find me in app/views/products/show.html.erb</p>
+<p><b>Description: </b> <%= @product.description %></p>
+<p><b>Price: </b> <%= number_to_currency @product.price %></p>
+<p><b>Stock Quantity: </b> <%= @product.stock_quantity %></p>
 
-<p><%= link_to 'Home', product_path %></p>
+<p><%= link_to 'Home', products_path %></p>
